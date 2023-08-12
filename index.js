@@ -2,6 +2,7 @@ const app = require("express")();
 const server = require("http").createServer(app);
 const cors = require("cors");
 
+app.options('https://warm-treacle-ee789c.netlify.app/', cors())
 const corsOptions =  {
 	origin: "https://warm-treacle-ee789c.netlify.app/",
 	
