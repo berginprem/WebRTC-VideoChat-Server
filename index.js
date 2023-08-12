@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const corsOptions =  {
 	origin: "https://warm-treacle-ee789c.netlify.app/",
-	methods: [ "GET", "POST" ]
+	
 }
 const io = require("socket.io")(server, {
 	cors: corsOptions,
