@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 
 io.on("connection", (socket) => {
-	socket.emit("me", socket.id);
+	io.emit("me", socket.id);
 
 	socket.on("disconnect", () => {
 		socket.broadcast.emit("callEnded")
