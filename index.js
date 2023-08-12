@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const corsOptions =  {
 	origin: "http://localhost:3000",
-	methods: [ "GET", "POST" ]
+	methods: [ "GET", "POST", "OPTIONS" ],
 }
 const io = require("socket.io")(server, {
 	cors: corsOptions,
